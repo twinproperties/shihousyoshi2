@@ -1,0 +1,9 @@
+{
+  "name": "司法書士 過去問トレーニング",
+  "short_name": "司法書士肢トレ",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4f6f8",
+  "theme_color": "#17324d",
+  "icons": []
+}

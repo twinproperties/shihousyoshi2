@@ -1,0 +1,31 @@
+{
+  "source_pdf_pages": {
+    "AM": 44,
+    "PM": 80
+  },
+  "rows": {
+    "AM_questions": 35,
+    "PM_multiple_choice": 35,
+    "PM_written": 2,
+    "answer_key": 70,
+    "source_pages": 124,
+    "items_draft": 350
+  },
+  "answer_number_range_check": {
+    "AM": true,
+    "PM": true
+  },
+  "page_ranges": {
+    "AM": "5-39 (35問)",
+    "PM_multiple_choice": "5-40 (35問; Q20 spans 24-25)",
+    "PM_written": "41-80 (2問)"
+  },
+  "warnings": [
+    "肢分割候補は自動抽出・原本照合前",
+    "予備校解答は公式解答ではない・未照合",
+    "肢別法的正誤と根拠未検証",
+    "記述式答案・採点基準未収録",
+    "PDF内の図表・画像はテキスト抽出で完全再現されない",
+    "GitHub PagesのPublic公開・著作権条件要確認"
+  ]
+}
