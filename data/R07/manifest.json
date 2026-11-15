@@ -1,0 +1,44 @@
+{
+  "dataset_id": "R07",
+  "year": 2025,
+  "display_name": "令和7年度",
+  "law_as_of": "2025-04-01",
+  "files": [
+    "AM_questions.csv",
+    "PM_multiple_choice.csv",
+    "PM_written.csv",
+    "answer_key.csv",
+    "items_draft.csv",
+    "source_pages.csv"
+  ],
+  "counts": {
+    "AM_multiple_choice": 35,
+    "PM_multiple_choice": 35,
+    "PM_written": 2,
+    "prep_school_answers": 70,
+    "source_pdf_pages": 107,
+    "item_extraction_candidates": 350
+  },
+  "subjects": {
+    "AM": {
+      "1-3": "憲法",
+      "4-23": "民法",
+      "24-26": "刑法",
+      "27-35": "商法・会社法"
+    },
+    "PM": {
+      "1-7": "民事訴訟法・民事執行法・民事保全法",
+      "8": "司法書士法",
+      "9-11": "供託法",
+      "12-27": "不動産登記法",
+      "28-35": "商業登記法",
+      "36": "不動産登記法（記述）",
+      "37": "商業登記法（記述）"
+    }
+  },
+  "source_files": {
+    "AM": "令和7午前.pdf",
+    "PM": "令和7午後(1).pdf"
+  },
+  "data_quality": "問題単位全文テキストはPDF抽出。予備校解答はユーザー提供情報。公式解答・法的正誤・根拠未照合。items_draftは自動抽出候補で原本照合前。記述式の図表・別紙・画像はテキスト抽出で欠落や文字化けの可能性あり。"
+}

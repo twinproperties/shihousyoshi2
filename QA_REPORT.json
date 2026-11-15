@@ -1,31 +1,20 @@
 {
-  "source_pdf_pages": {
-    "AM": 44,
-    "PM": 80
-  },
-  "rows": {
-    "AM_questions": 35,
-    "PM_multiple_choice": 35,
-    "PM_written": 2,
-    "answer_key": 70,
-    "source_pages": 124,
-    "items_draft": 350
-  },
-  "answer_number_range_check": {
-    "AM": true,
-    "PM": true
-  },
-  "page_ranges": {
-    "AM": "5-39 (35問)",
-    "PM_multiple_choice": "5-40 (35問; Q20 spans 24-25)",
-    "PM_written": "41-80 (2問)"
+  "dataset": "R07",
+  "checks": {
+    "AM_question_count": 35,
+    "PM_multiple_choice_count": 35,
+    "PM_written_count": 2,
+    "answer_count": 70,
+    "items_draft_count": 350,
+    "source_page_count": 107,
+    "answer_numbers_valid": true,
+    "question_ids_unique": true
   },
   "warnings": [
-    "肢分割候補は自動抽出・原本照合前",
-    "予備校解答は公式解答ではない・未照合",
-    "肢別法的正誤と根拠未検証",
-    "記述式答案・採点基準未収録",
-    "PDF内の図表・画像はテキスト抽出で完全再現されない",
-    "GitHub PagesのPublic公開・著作権条件要確認"
+    "問題全文はPDF抽出テキストであり、図表・別紙・文字配置が完全再現される保証はない。",
+    "肢別候補は自動抽出候補であり、PDF原本との照合前。",
+    "予備校解答番号はユーザー提供情報。公式解答との照合は未実施。",
+    "記述式の答案・採点基準は収録していない。",
+    "公開GitHubへの掲載前に著作権・二次利用条件を確認すること。"
   ]
 }
