@@ -1,20 +1,29 @@
 {
-  "dataset": "R07",
-  "checks": {
-    "AM_question_count": 35,
-    "PM_multiple_choice_count": 35,
-    "PM_written_count": 2,
-    "answer_count": 70,
-    "items_draft_count": 350,
-    "source_page_count": 107,
-    "answer_numbers_valid": true,
+  "dataset": "R06",
+  "basic_checks": {
+    "AM_multiple_choice": true,
+    "PM_multiple_choice": true,
+    "PM_written": true,
+    "answer_keys": true,
+    "item_candidates": true,
+    "source_pages": true,
+    "answers_valid": true,
     "question_ids_unique": true
   },
+  "item_candidates_extracted": 336,
+  "item_candidates_missing": 14,
+  "page_mapping": {
+    "AM_multiple_choice": "PDF pages 2-36, Q1-Q35",
+    "PM_multiple_choice": "PDF pages 2-37, Q1-Q35",
+    "PM_written_Q36": "PDF pages 38-56",
+    "PM_written_Q37": "PDF pages 57-74",
+    "PM_page_75": "Answer sheet; retained in source_pages.csv only"
+  },
   "warnings": [
-    "問題全文はPDF抽出テキストであり、図表・別紙・文字配置が完全再現される保証はない。",
-    "肢別候補は自動抽出候補であり、PDF原本との照合前。",
-    "予備校解答番号はユーザー提供情報。公式解答との照合は未実施。",
-    "記述式の答案・採点基準は収録していない。",
-    "公開GitHubへの掲載前に著作権・二次利用条件を確認すること。"
+    "問題文はPDFテキスト抽出であり、図表・画像・複雑な別紙の完全再現を保証しない。",
+    "予備校解答は添付解答一覧PDFの記載を転記。公式解答との照合・法的正誤確認は未実施。",
+    "items_draft.csvは自動抽出候補。全肢の原本照合は未実施。",
+    "記述式の別紙・表・図面は抽出漏れや文字化けの可能性があるため、原本PDFとの併用を推奨。",
+    "公開GitHubリポジトリへの試験問題・解答一覧の掲載は、二次利用条件・著作権を確認すること。"
   ]
 }
