@@ -1,0 +1,44 @@
+{
+  "dataset_id": "R05",
+  "year": 2023,
+  "display_name": "令和5年度",
+  "law_as_of": "2023-04-01",
+  "files": [
+    "AM_questions.csv",
+    "PM_multiple_choice.csv",
+    "PM_written.csv",
+    "answer_key.csv",
+    "items_draft.csv",
+    "source_pages.csv"
+  ],
+  "counts": {
+    "AM_multiple_choice": 35,
+    "PM_multiple_choice": 35,
+    "PM_written": 2,
+    "prep_school_answers": 70,
+    "source_pdf_pages": 105,
+    "item_extraction_candidates": 350
+  },
+  "subjects": {
+    "AM": {
+      "1-3": "憲法",
+      "4-23": "民法",
+      "24-26": "刑法",
+      "27-35": "商法・会社法"
+    },
+    "PM": {
+      "1-7": "民事訴訟法・民事執行法・民事保全法",
+      "8": "司法書士法",
+      "9-11": "供託法",
+      "12-27": "不動産登記法",
+      "28-35": "商業登記法",
+      "36": "不動産登記法（記述）",
+      "37": "商業登記法（記述）"
+    }
+  },
+  "source_files": {
+    "AM": "令和5午前.pdf",
+    "PM": "令和5午後.pdf"
+  },
+  "data_quality": "問題単位テキストは添付PDFから抽出。ユーザー提供の正解番号を予備校解答として登録（公式解答未照合）。テーマ名は未提供のため未設定。items_draftは自動抽出候補でPDF原本照合前。記述式の図表・別紙・画像はテキスト抽出で欠落や文字化けの可能性あり。"
+}

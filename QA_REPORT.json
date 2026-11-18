@@ -1,29 +1,27 @@
 {
-  "dataset": "R06",
-  "basic_checks": {
-    "AM_multiple_choice": true,
-    "PM_multiple_choice": true,
-    "PM_written": true,
-    "answer_keys": true,
-    "item_candidates": true,
-    "source_pages": true,
-    "answers_valid": true,
-    "question_ids_unique": true
+  "dataset": "R05",
+  "checks": {
+    "AM_question_count": true,
+    "PM_mc_count": true,
+    "PM_written_count": true,
+    "answer_key_count": true,
+    "answer_values_valid": true,
+    "item_candidate_count": true,
+    "source_page_count": true,
+    "unique_question_ids": true,
+    "expected_page_mapping": true
   },
-  "item_candidates_extracted": 336,
-  "item_candidates_missing": 14,
   "page_mapping": {
-    "AM_multiple_choice": "PDF pages 2-36, Q1-Q35",
-    "PM_multiple_choice": "PDF pages 2-37, Q1-Q35",
-    "PM_written_Q36": "PDF pages 38-56",
-    "PM_written_Q37": "PDF pages 57-74",
-    "PM_page_75": "Answer sheet; retained in source_pages.csv only"
+    "AM_multiple_choice": "PDF pages 2-36",
+    "PM_multiple_choice": "PDF pages 2-36",
+    "PM_written_Q36": "PDF pages 37-48",
+    "PM_written_Q37": "PDF pages 49-67",
+    "answer_sheet_pages": "AM 37; PM 68"
   },
-  "warnings": [
-    "問題文はPDFテキスト抽出であり、図表・画像・複雑な別紙の完全再現を保証しない。",
-    "予備校解答は添付解答一覧PDFの記載を転記。公式解答との照合・法的正誤確認は未実施。",
-    "items_draft.csvは自動抽出候補。全肢の原本照合は未実施。",
-    "記述式の別紙・表・図面は抽出漏れや文字化けの可能性があるため、原本PDFとの併用を推奨。",
-    "公開GitHubリポジトリへの試験問題・解答一覧の掲載は、二次利用条件・著作権を確認すること。"
+  "notes": [
+    "Answer keys are user-provided prep-school answers and have not been checked against official answers.",
+    "Topic names were not supplied and were not inferred.",
+    "Item candidates are heuristic and unverified.",
+    "Figures, tables, appendices and scans may not be fully represented in extracted text."
   ]
 }
