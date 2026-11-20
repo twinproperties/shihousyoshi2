@@ -1,0 +1,34 @@
+{
+  "year": 2022,
+  "display_name": "令和4年度",
+  "year_code": "R04",
+  "law_as_of": "2022-04-01",
+  "description": "令和4年度司法書士試験 筆記試験データ",
+  "files": {
+    "AM_questions": "AM_questions.csv",
+    "PM_multiple_choice": "PM_multiple_choice.csv",
+    "PM_written": "PM_written.csv",
+    "answer_key": "answer_key.csv",
+    "items_draft": "items_draft.csv",
+    "source_pages": "source_pages.csv"
+  },
+  "counts": {
+    "AM_multiple_choice": 35,
+    "PM_multiple_choice": 35,
+    "PM_written": 2,
+    "answer_keys": 70,
+    "item_candidates": 325,
+    "source_pdf_pages": 115
+  },
+  "source_files": [
+    "令和4午前(1).pdf",
+    "令和4午後.pdf"
+  ],
+  "notes": [
+    "正解番号はユーザー提供一覧を転記。公式原典との独立照合は未実施。",
+    "択一問題文はPDFテキスト抽出。図表・レイアウト・文字化け等は原本確認が必要。",
+    "items_draft.csvはア・イ・ウ・エ・オの自動抽出候補。各肢の正誤は未判定。",
+    "記述式問題は設問・資料のテキスト抽出。答案採点基準・模範解答は含まない。",
+    "公開リポジトリでの問題文・正解一覧の再配布可否は別途確認が必要。"
+  ]
+}
